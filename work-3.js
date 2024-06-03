@@ -5,5 +5,7 @@ function WorkThree(index,name) {
   };
   return local;
 };
-let test = WorkThree(0,"조자연");
-console.log(test);
+
+module.exports = WorkThree;
+
+
