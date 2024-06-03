@@ -14,11 +14,18 @@ console.log(WorkOne("c","b"));
 
 let a = WorkOne('w','x');
 console.log(typeof(a));
-console.log(a);
 
-function WorkOne2(a,b) {
-  let localVariable = {};
-  localVariable[a] = b;
-  return localVariable;
-}
-console.log(WorkOne2("a","b"));
+
+function WorkOne(a,b) {
+    let localVariable = {};
+    
+    localVariable[a] = a;
+    localVariable[b] = b;
+
+    return localVariable;
+  };
+  let test = WorkOne("a","b")
+  console.log(test);
+  
+  
+  
