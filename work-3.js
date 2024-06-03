@@ -1,1 +1,6 @@
-console.log("work-3");
+function WorkThree(a,b) {
+  let local ={};
+  local[a] = a;
+  local[b] = b;
+  return local;
+};
