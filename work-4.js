@@ -32,8 +32,10 @@ console.log(makeMember(1,"김보미"));
 
 let arrayMembers = [];
 
-for (let i = 0; i ,names.length; i++){
+for (let i = 0; i <names.length; i++){
   let member = makeMember(i, names[i])
   arrayMembers.push(member);
 }
+
+console.log(arrayMembers);
 
