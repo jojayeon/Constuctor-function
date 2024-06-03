@@ -6,5 +6,19 @@
 function WorkOne(a,b) {
 // * logic : 매개변수 두개를 받은 다음
 // * logic : reurn은 객체였음 좋겠다.
-  return 오브젝트;
+  let localVariable = {a,b};
+  return localVariable;
 };
+
+console.log(WorkOne("c","b"));
+
+let a = WorkOne('w','x');
+console.log(typeof(a));
+console.log(a);
+
+function WorkOne2(a,b) {
+  let localVariable = {};
+  localVariable[a] = b;
+  return localVariable;
+}
+console.log(WorkOne2("a","b"));
