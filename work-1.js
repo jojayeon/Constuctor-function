@@ -17,15 +17,30 @@ console.log(typeof(a));
 
 
 function WorkOne(a,b) {
+// * logic : 매개변수 두개를 받은 다음
+// * logic : reurn은 객체였음 좋겠다.
+if(typeof(a)==="string"){
+  if(typeof(b)==="string"){
     let localVariable = {};
     
-    localVariable[a] = a;
-    localVariable[b] = b;
+      localVariable[a] = a;
+      localVariable[b] = b;
+    
+      return localVariable;
+  }else {
+    console.error("문자열로 해")
+  }
+} else {
+  console.error("문자열로 해")
+}
+//* condition : 배개변수 모둔 문자열이여야한다. 
+};
 
-    return localVariable;
-  };
-  let test = WorkOne("a","b")
-  console.log(test);
+let test = WorkOne("a","b")
+console.log(test);
   
+
+let test2 = WorkOne(1,2)
+console.log(test2);
   
   
