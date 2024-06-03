@@ -37,5 +37,10 @@ for (let i = 0; i <names.length; i++){
   arrayMembers.push(member);
 }
 
+names.forEach((name, index) => {
+  arrayMembers.push(makeMember(name, index));
+});
+
+
 console.log(arrayMembers);
 
